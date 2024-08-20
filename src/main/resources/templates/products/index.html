@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,7 +43,7 @@
                 </td>
                 <td>
                     <a class="btn btn-primary btn-sm me-2" th:href="@{products/edit(id=${product.id})}">Edit</a>
-                    <a class="btn btn-danger btn-sm" th:href="@{products/delete(id=${product.id})}" onclick="return confirm('Are you sure?)">Delete</a>
+                    <a class="btn btn-danger btn-sm" th:href="@{products/delete(id=${product.id})}" onclick="return confirm('Are you sure?')">Delete</a>
 
                 </td>
             </tr>
